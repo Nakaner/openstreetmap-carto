@@ -237,6 +237,9 @@
     marker-fill: @accommodation-icon;
     marker-placement: interior;
     marker-clip: false;
+    [access != ''][access != 'permissive'][access != 'yes'] {
+      marker-opacity: 0.33;
+    }
   }
 
   // Ford tagging on points - ford on lines is defined later
@@ -2649,6 +2652,7 @@
     }
     [feature = 'tourism_alpine_hut'],
     [feature = 'tourism_wilderness_hut'],
+    [feature = 'tourism_camp_site'],
     [feature = 'amenity_shelter'] {
       [access != ''][access != 'permissive'][access != 'yes'] {
         text-opacity: 0.33;
