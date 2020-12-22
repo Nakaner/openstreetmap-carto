@@ -1,7 +1,3 @@
-Map {
-  background-color: @land-color;
-}
-
 @water-color: #aad3df;
 @land-color: #f2efe9;
 
